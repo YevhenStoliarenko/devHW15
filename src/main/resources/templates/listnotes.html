@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="'Our notes: ' + ${note}"></h1>
+<div class="note-form">
+    <form action="edit">
+        <button class="link-button" type="submit" style="background-color: chocolate; color: aliceblue;">Edit</button>
+        <input type="text" name="id" id="updateNote" value="">
+    </form>
+    <br>
+
+    <form action="delete" method="post">
+        <button class="link-button" type="submit" style="background-color: blue; color: aliceblue;">Delete</button>
+        <input type="text" name="id" id="delteNote" value="">
+    </form>
+    <br>
+
+    <form action="create">
+        <button class="link-button" type="submit" style= "background-color: darkblue; color: aliceblue;">Create</button>
+        <input type="text" name="title" id="inputTitle" value="title">
+        <input type="text" name="content" id="inputContent" value="content">
+    </form>
+    <br>
+
+    <form action="update" method="post">
+        <button class="link-button" type="submit" style="background-color: brown; color: aliceblue;">Update</button>
+        <input type="text" name="id" id="oldId" value="oldId">
+        <input type="text" name="updateId" id="updateId" value="updateId">
+        <input type="text" name="title" id="updateTitle" value="title">
+        <input type="text" name="content" id="updateContent" value="content">
+    </form>
+    <br>
+
+
+</div>
+</body>
+</html>
